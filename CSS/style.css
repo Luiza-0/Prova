@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#body{
+    background-color: #044D8C;
+    font-family: 'Copse', serif;
+    font-size: 32px;
+}
+
+
+/*Principal*/
+main{
+    width: 720px;
+    height: 720px;
+    margin: 0 auto;
+    border: 1px solid #044D8C;
+}
+
+#BackgroundMain{
+    opacity: 0.6;
+    width: 720px;
+    height: 720px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*Forms Area*/
+#FormsSpace{
+    width: 720px;
+    height: 720px;
+    top: 0;
+    margin: 65px auto;
+    position: absolute;
+}
+
+.form-control{
+    margin-bottom: 45px;
+    width: 804px;
+    height: 65px;
+    background-color: #F5F5F5;
+    color: #B1B1B1;
+}
+
+
+/*Efeito float-label*/
+
+.label-float> label{
+    background: none;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 9px;
+  }
+  
+.label-float input {
+border: 1px solid lightgrey;
+border-radius: 15px;
+outline: none;
+min-width: 200px;
+padding: 15px 20px;
+font-size: 15px;
+transition: all .1s linear;
+-webkit-transition: all .1s linear;
+-moz-transition: all .1s linear;
+}
+
+.label-float input:focus {
+border: 2px solid #3951b2;
+}
+
+.label-float input::placeholder {
+color: transparent;
+}
+  
+.label-float label {
+pointer-events: none;
+position: absolute;
+top: calc(50% - 10px);
+left: 15px;
+transition: all .1s linear;
+-webkit-transition: all .1s linear;
+-moz-transition: all .1s linear;
+padding: 5px;
+box-sizing: border-box;
+}
+
+
+
+/*Espaços obrigatório float-label*/
+.label-float input:required:invalid+label {
+color: #B1B1B1;
+}
+
+.label-float input:focus:required:invalid {
+border: 2px solid #B1B1B1;
+}
+
+.label-float input:required:invalid+label:before {
+content: '*';
+}
+
+.label-float input:focus+label,
+.label-float input:not(:placeholder-shown)+label {
+font-size: 15px;
+top: 3px;
+}
+
+
+
+/*Input file - Seletor de arquivos*/
+input[type='file'] {
+    display: none;
+}
+
+label{
+    height: 65px;
+    width: 283px;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    color: #B1B1B1;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+
+/*Input submit*/
+#inputGroupFileAddon03{
+    color: #F5F5F5;
+    width: 179px;
+    height: 65px;
+    font-size: 24px;
+    border-radius: 15px;
+    left: 5px;
+}
+
+
+/*Rodapé*/
+#footer{
+    background-color: #B1B1B1;
+    width: 100%;
+    height: 240px;
+}
+
+footer>section img{
+    width: 100px;
+    height: 100px;
+}
+
+/**********LOGIN*****************************************************************/
+
+/* Bordered form */
+
+form> #FormsSpaceLogin {
+    position: absolute;
+    border: 3px solid #f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+
+  /* Add padding to containers */
+.container {
+    padding: 16px;
+    margin: auto;
+  }
